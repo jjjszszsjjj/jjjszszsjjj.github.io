@@ -29,6 +29,15 @@ $ git pull # 更新其他设备内容
 $ npm install hexo --no-optional # 解决版本问题
 ```
 
+### 图片相关修改
+安装插件[hexo-renderer-marked](https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo-renderer-marked) 并修改`config.yaml`文档部分
+``` bash
+post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
+```
+
 ### 工作机测试
 插入图片并上传更新内容至hexo分支![hexo分支](temp.png)
 
