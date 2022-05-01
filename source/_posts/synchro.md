@@ -7,3 +7,5 @@ tags:
 ### 工作机下载并操作
 `npm install hexo --no-optional`  解决版本问题
 插入图片并上传更新内容至hexo分支![hexo分支](temp.png)
+## laptop端
+笔记本端修改并上传![移动端](temp2.png)
