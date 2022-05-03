@@ -71,6 +71,70 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-course-wiki" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/05/01/course-wiki/" class="article-date">
+  <time class="dt-published" datetime="2022-05-01T13:52:06.000Z" itemprop="datePublished">2022-05-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/05/01/course-wiki/">course_wiki</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>OpenFOAM Wiki的<a target="_blank" rel="noopener" href="https://wiki.openfoam.com/index.php?title=%223_weeks%22_series">“3 weeks” series</a></p>
+<h2 id="Day-One"><a href="#Day-One" class="headerlink" title="Day One"></a>Day One</h2><h3 id="icoFoam-求解器"><a href="#icoFoam-求解器" class="headerlink" title="icoFoam 求解器"></a>icoFoam 求解器</h3><p>用于求解不可压缩牛顿流体的层流流动，基于PISO(pressure-implicit split-operator)算法:<br>压力-速度迭代求解瞬态问题。每个迭代步中，利用一个预测步求解动量方程，再进行两步校正<br>分别修正速度与压力。</p>
+<h3 id="关于网格"><a href="#关于网格" class="headerlink" title="关于网格"></a>关于网格</h3><p>当含有内部面时的操作<code>fluent3DMeshToFoam</code>,转换时内部面保持不变</p>
+<h3 id="软链接"><a href="#软链接" class="headerlink" title="软链接"></a>软链接</h3><p>由于之前运行过算例及不同网格, 建立软链接方式为:在软链接文件夹内($FOAM_RUN&#x2F;day_1)<br><code>ln -s /mnt/d/OFTutorialSeries/elbow/ basic_setup</code></p>
+<h3 id="标准单位制"><a href="#标准单位制" class="headerlink" title="标准单位制"></a>标准单位制</h3><table>
+<thead>
+<tr>
+<th align="center">质量</th>
+<th align="center">长度</th>
+<th align="center">时间</th>
+<th align="center">温度</th>
+<th align="center">摩尔数</th>
+<th align="center">电流</th>
+<th align="center">发光强度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">kg</td>
+<td align="center">m</td>
+<td align="center">s</td>
+<td align="center">K</td>
+<td align="center">mol</td>
+<td align="center">a</td>
+<td align="center">c</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/05/01/course-wiki/" data-id="cl2pfov6l000004w773nkh9vu" data-title="course_wiki" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/05/01/hello-world/" class="article-date">
@@ -209,6 +273,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/05/01/course-wiki/">course_wiki</a>
+          </li>
         
           <li>
             <a href="/2022/05/01/hello-world/">Hello World</a>
