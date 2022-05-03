@@ -25,3 +25,13 @@ OpenFOAM Wiki的["3 weeks" series](https://wiki.openfoam.com/index.php?title=%22
 |质量|长度|时间|温度|摩尔数|电流|发光强度|
 |:----:|:---:|:---:|:---:|:---:|:---:|:---:|
 |kg|m|s|K|mol|a|c|
+
+## Day Two
+
+### CFL 准则
+由于物理信息的传输应先于信息传递，Courant数
+Co=$\frac{u{\Delta}t}{{\Delta}x}\leq1$
+
+`foamCalc mag U`
+替换为:
+`postProcess -func sample`
