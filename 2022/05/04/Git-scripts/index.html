@@ -20,23 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="救世主是救世主">
-<meta property="og:url" content="http://example.com/tags/start/index.html">
+    <meta name="description" content="Git 命令总结 123456789101112131415# 撤销改动$ git checkout -- file #撤销对工作区文件改动$ git reset file #撤销 git add添加内容$ git reset file &amp;&amp; git checkout -- file #提交后工作区又进行修改$ git reset HEAD -- file #撤销暂存区文件修改,">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用命令">
+<meta property="og:url" content="http://example.com/2022/05/04/Git-scripts/index.html">
 <meta property="og:site_name" content="救世主是救世主">
+<meta property="og:description" content="Git 命令总结 123456789101112131415# 撤销改动$ git checkout -- file #撤销对工作区文件改动$ git reset file #撤销 git add添加内容$ git reset file &amp;&amp; git checkout -- file #提交后工作区又进行修改$ git reset HEAD -- file #撤销暂存区文件修改,">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-05-04T11:44:11.000Z">
+<meta property="article:modified_time" content="2022-05-04T11:55:46.148Z">
 <meta property="article:author" content="jsz">
+<meta property="article:tag" content="命令">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/tags/start/">
+<link rel="canonical" href="http://example.com/2022/05/04/Git-scripts/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/start/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/05/04/Git-scripts/","path":"2022/05/04/Git-scripts/","title":"常用命令"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>标签: start | 救世主是救世主</title>
+<title>常用命令 | 救世主是救世主</title>
   
 
 
@@ -98,7 +103,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -111,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#git-%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93"><span class="nav-number">1.</span> <span class="nav-text">Git 命令总结</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,50 +168,102 @@
 </noscript>
 
 
-    <div class="main-inner tag posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">start
-          <small>标签</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/04/Git-scripts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jsz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="救世主是救世主">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="常用命令 | 救世主是救世主">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          常用命令
         </h1>
-      </div>
 
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="创建时间：2022-05-04 19:44:11 / 修改时间：19:55:46" itemprop="dateCreated datePublished" datetime="2022-05-04T19:44:11+08:00">2022-05-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/bash/" itemprop="url" rel="index"><span itemprop="name">bash</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="git-命令总结">Git 命令总结</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 撤销改动</span></span><br><span class="line">$ git checkout -- file <span class="comment">#撤销对工作区文件改动</span></span><br><span class="line">$ git reset file <span class="comment">#撤销 git add添加内容</span></span><br><span class="line"></span><br><span class="line">$ git reset file &amp;&amp; git checkout -- file <span class="comment">#提交后工作区又进行修改</span></span><br><span class="line"></span><br><span class="line">$ git reset HEAD -- file <span class="comment">#撤销暂存区文件修改, 保留工作区修改</span></span><br><span class="line">$ git reset -- hard HEAD -- file <span class="comment">#撤销暂存区文件修改, 不保留工作区修改</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支及提交</span></span><br><span class="line">$ git checkout -b branch_name &amp;&amp; git push origin branch_name -u</span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">$ git checkout branch_name</span><br><span class="line"><span class="comment"># 特定分支内容</span></span><br><span class="line">$ git <span class="built_in">clone</span> -b branch_name repository_add</span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-05-01T21:52:06+08:00"
-              content="2022-05-01">
-          05-01
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/01/course-wiki/" itemprop="url">
-            <span itemprop="name">course_wiki</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%91%BD%E4%BB%A4/" rel="tag"># 命令</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/01/course-wiki/" rel="prev" title="course_wiki">
+                  <i class="fa fa-chevron-left"></i> course_wiki
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
+
 
 </div>
   </main>

@@ -123,17 +123,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">分类</span>
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -162,6 +163,86 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/04/Git-scripts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jsz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="救世主是救世主">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 救世主是救世主">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/05/04/Git-scripts/" class="post-title-link" itemprop="url">常用命令</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2022-05-04 19:44:11 / 修改时间：19:55:46" itemprop="dateCreated datePublished" datetime="2022-05-04T19:44:11+08:00">2022-05-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/bash/" itemprop="url" rel="index"><span itemprop="name">bash</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="git-命令总结">Git 命令总结</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 撤销改动</span></span><br><span class="line">$ git checkout -- file <span class="comment">#撤销对工作区文件改动</span></span><br><span class="line">$ git reset file <span class="comment">#撤销 git add添加内容</span></span><br><span class="line"></span><br><span class="line">$ git reset file &amp;&amp; git checkout -- file <span class="comment">#提交后工作区又进行修改</span></span><br><span class="line"></span><br><span class="line">$ git reset HEAD -- file <span class="comment">#撤销暂存区文件修改, 保留工作区修改</span></span><br><span class="line">$ git reset -- hard HEAD -- file <span class="comment">#撤销暂存区文件修改, 不保留工作区修改</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建新分支及提交</span></span><br><span class="line">$ git checkout -b branch_name &amp;&amp; git push origin branch_name -u</span><br><span class="line"><span class="comment"># 切换分支</span></span><br><span class="line">$ git checkout branch_name</span><br><span class="line"><span class="comment"># 特定分支内容</span></span><br><span class="line">$ git <span class="built_in">clone</span> -b branch_name repository_add</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -207,7 +288,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-05-04 19:31:55" itemprop="dateModified" datetime="2022-05-04T19:31:55+08:00">2022-05-04</time>
+      <time title="修改时间：2022-05-04 19:58:45" itemprop="dateModified" datetime="2022-05-04T19:58:45+08:00">2022-05-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -220,6 +301,10 @@
           ，
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
           <a href="/categories/OpenFOAM/course/" itemprop="url" rel="index"><span itemprop="name">course</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Course/" itemprop="url" rel="index"><span itemprop="name">Course</span></a>
         </span>
     </span>
 
@@ -415,7 +500,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2022-05-04 19:39:36" itemprop="dateModified" datetime="2022-05-04T19:39:36+08:00">2022-05-04</time>
+      <time title="修改时间：2022-05-04 20:50:44" itemprop="dateModified" datetime="2022-05-04T20:50:44+08:00">2022-05-04</time>
     </span>
 
   
@@ -443,16 +528,24 @@
 <li>移动/固定端使用 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> git@github.com:jjjszszsjjj/jjjszszsjjj.github.io.git <span class="comment"># 默认hexo分支</span></span><br><span class="line">$ git pull <span class="comment"># 更新其他设备内容</span></span><br><span class="line">$ npm install hexo --no-optional <span class="comment"># 解决版本问题</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="图片相关修改">图片相关修改</h3>
-<p>安装插件<a href="https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> 并修改<code>config.yaml</code>文档部分 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br><span class="line">marked:</span><br><span class="line">  prependRoot: <span class="literal">true</span></span><br><span class="line">  postAsset: <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<p>安装插件<a href="https://link.zhihu.com/?target=https%3A//github.com/hexojs/hexo-renderer-marked">hexo-renderer-marked</a> 并修改<code>config.yaml</code>文档部分</p>
+<details class="note default" close>
+<summary> 关于<strong>hexo-renderer-marked</strong>渲染库 </summary>
+<ul>
+由于对于Latex公式支持效果不好,后续uninstall,<a href="#uninstall">更换渲染库</a>
+</ul>
+</details>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: <span class="literal">true</span></span><br><span class="line">marked:</span><br><span class="line">  prependRoot: <span class="literal">true</span></span><br><span class="line">  postAsset: <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 输入绝对路径保证首页正文中均显示</span></span><br><span class="line">![移动端](/images/new-blog/temp2.png)</span><br></pre></td></tr></table></figure>
 <h3 id="工作机测试">工作机测试</h3>
-<p>插入图片并上传更新内容至hexo分支<img src="/images/new-blog/temp.png" alt="&quot;dsf&quot;" /></p>
+<p>插入图片并上传更新内容至hexo分支<br />
+<img src="/images/new-blog/temp.png" title="temp" alt="dsf" /></p>
 <h3 id="laptop测试">laptop测试</h3>
-<p>笔记本端修改并上传<img src="/images/new-blog/temp2.png" alt="移动端" /></p>
+<p>笔记本端修改并上传<img src="/images/new-blog/temp2.png" title="temp2" alt="移动端" /></p>
 <h2 id="出发点">出发点</h2>
 <p>记录以及随时备份的必要性愈发关键,与此同时应当形成知识体系。</p>
 <h2 id="公式及其他">公式及其他</h2>
 <p>结合官方文档:<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/math-equations.html?highlight=math">math equations</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm un hexo-renderer-marked</span><br><span class="line">$ npm i hexo-renderer-pandoc</span><br></pre></td></tr></table></figure>
+<p><a id='uninstall'></a> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm un hexo-renderer-marked</span><br><span class="line">$ npm i hexo-renderer-pandoc</span><br></pre></td></tr></table></figure></p>
 <p><span class="math display">\[ e=mc^2 \]</span></p>
 <p><span class="math display">\[
 \begin{eqnarray}
