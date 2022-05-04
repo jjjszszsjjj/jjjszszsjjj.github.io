@@ -4,6 +4,9 @@ date: 2022-05-01 21:52:06
 tags:
  - basic
  - start
+categories:
+- [OpenFOAM, course]
+
 ---
 
 OpenFOAM Wiki的["3 weeks" series](https://wiki.openfoam.com/index.php?title=%223_weeks%22_series)
@@ -19,7 +22,7 @@ OpenFOAM Wiki的["3 weeks" series](https://wiki.openfoam.com/index.php?title=%22
 当含有内部面时的操作`fluent3DMeshToFoam`,转换时内部面保持不变
 
 ### 软链接
-由于之前运行过算例及不同网格, 建立软链接方式为:在软链接文件夹内($FOAM_RUN/day_1)
+由于之前运行过算例及不同网格, 建立软链接方式为:在软链接文件夹内($FOAM_RUN/day_1)  
 `ln -s /mnt/d/OFTutorialSeries/elbow/ basic_setup`
 
 ### 标准单位制
@@ -27,3 +30,9 @@ OpenFOAM Wiki的["3 weeks" series](https://wiki.openfoam.com/index.php?title=%22
 |质量|长度|时间|温度|摩尔数|电流|发光强度|
 |:----:|:---:|:---:|:---:|:---:|:---:|:---:|
 |kg|m|s|K|mol|a|c|
+
+
+## Day Two
+
+CFL 准则 (物理信息传输先于信息传输在速率), 库朗数:
+$$Co=\frac u{\Delta t} {\Delta x}\leq 1$$
