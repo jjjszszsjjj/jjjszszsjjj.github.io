@@ -6,6 +6,7 @@ tags:
  - start
 categories:
 - [OpenFOAM, course]
+- Course
 
 ---
 
