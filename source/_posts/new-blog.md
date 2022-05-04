@@ -1,8 +1,11 @@
 ---
 title: 基础及出发
 date: 2022-04-30 19:27:29
+mathjax: true
 tags:
 ---
+
+> “生活需要**力量**，力量来自于**知识**。知识源自**积累**，积累出于兴趣与**渴望**”。
 
 ## 基础搭建
 结合[Hexo图片公式问题](https://zhuanlan.zhihu.com/p/265077468)
@@ -39,14 +42,32 @@ marked:
 ```
 
 ### 工作机测试
-插入图片并上传更新内容至hexo分支![hexo分支](temp.png)
+插入图片并上传更新内容至hexo分支!["dsf"](/images/new-blog/temp.png)
 
 ### laptop测试
-笔记本端修改并上传![移动端](temp2.png)
+笔记本端修改并上传![移动端](/images/new-blog/temp2.png)
 
 ## 出发点
-记录以及随时备份的必要性愈发关键,与此同时应当形成知识体系。
-<center>2022.4.30 ~ 5.1</center>
 
-> “生活需要**力量**，力量来自于**知识**。  
-   知识源自**积累**，积累出于兴趣与**渴望**”。
+记录以及随时备份的必要性愈发关键,与此同时应当形成知识体系。
+
+## 公式及其他
+
+结合官方文档:[math equations](https://theme-next.js.org/docs/third-party-services/math-equations.html?highlight=math)
+
+``` bash
+$ npm un hexo-renderer-marked
+$ npm i hexo-renderer-pandoc
+```
+
+$$ e=mc^2 $$  
+
+$$
+\begin{eqnarray}
+\nabla\cdot\vec{E} &=& \frac{\rho}{\epsilon_0} \\
+\nabla\cdot\vec{B} &=& 0 \\
+\nabla\times\vec{E} &=& -\frac{\partial B}{\partial t} \\
+\nabla\times\vec{B} &=& \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)
+\end{eqnarray}
+$$
+
