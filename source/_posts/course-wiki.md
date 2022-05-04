@@ -1,5 +1,5 @@
 ---
-title: course_wiki
+title: Wiki_3weeks
 date: 2022-05-01 21:52:06
 tags:
  - basic
@@ -37,3 +37,6 @@ OpenFOAM Wiki的["3 weeks" series](https://wiki.openfoam.com/index.php?title=%22
 
 CFL 准则 (物理信息传输先于信息传输在速率), 库朗数:
 $$Co=\frac u{\Delta t} {\Delta x}\leq 1$$
+
+## Day Three
+公式及主题等
