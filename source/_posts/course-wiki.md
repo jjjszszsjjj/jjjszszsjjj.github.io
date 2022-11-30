@@ -1,12 +1,12 @@
 ---
-title: Wiki_3weeks
+title: I Enjoy Programming
 date: 2022-05-01 21:52:06
 tags:
  - basic
  - start
 categories:
-- [OpenFOAM, course]
-- Course
+- [OpenFOAM, Programming]
+- OpenFOAM
 
 ---
 
