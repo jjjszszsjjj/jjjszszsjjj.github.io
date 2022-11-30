@@ -20,23 +20,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.11.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="巨婴男孩诞生记">
-<meta property="og:url" content="http://example.com/categories/OpenFOAM/index.html">
+    <meta name="description" content="Ghost-Cell IBM cfd-online arjun  力源项施加到流体相动量方程，而固体相内部网格速度等于颗粒速度。而压力由连续性方程求解得到包含流体、固体域整体的结果  通过修改ghost-cell值使原求解形式中梯度（扩散项）等变量在被边界截断时可以为实际情况。  遍历全部网格,对于流体网格,当其邻居中具有在颗粒内部的网格时便是ghost-cell，进而修改上述ghost-c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="immersed-boundary">
+<meta property="og:url" content="http://example.com/2022/05/14/immersed-boundary/index.html">
 <meta property="og:site_name" content="巨婴男孩诞生记">
+<meta property="og:description" content="Ghost-Cell IBM cfd-online arjun  力源项施加到流体相动量方程，而固体相内部网格速度等于颗粒速度。而压力由连续性方程求解得到包含流体、固体域整体的结果  通过修改ghost-cell值使原求解形式中梯度（扩散项）等变量在被边界截断时可以为实际情况。  遍历全部网格,对于流体网格,当其邻居中具有在颗粒内部的网格时便是ghost-cell，进而修改上述ghost-c">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/immersed-boundary/f1.png">
+<meta property="og:image" content="http://example.com/images/immersed-boundary/f2.png">
+<meta property="og:image" content="http://example.com/images/immersed-boundary/f3.png">
+<meta property="og:image" content="http://example.com/images/immersed-boundary/f4.png">
+<meta property="article:published_time" content="2022-05-14T07:39:33.000Z">
+<meta property="article:modified_time" content="2022-11-30T13:41:44.248Z">
 <meta property="article:author" content="jsz">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/immersed-boundary/f1.png">
 
 
-<link rel="canonical" href="http://example.com/categories/OpenFOAM/">
+<link rel="canonical" href="http://example.com/2022/05/14/immersed-boundary/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"categories/OpenFOAM/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2022/05/14/immersed-boundary/","path":"2022/05/14/immersed-boundary/","title":"immersed-boundary"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>分类: OpenFOAM | 巨婴男孩诞生记</title>
+<title>immersed-boundary | 巨婴男孩诞生记</title>
   
 
 
@@ -98,7 +107,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -111,6 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#ghost-cell-ibm"><span class="nav-number">1.</span> <span class="nav-text">Ghost-Cell IBM</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -162,50 +172,102 @@
 </noscript>
 
 
-    <div class="main-inner category posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
+
+
+<div class="post-block">
   
   
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <h1 class="collection-header">OpenFOAM
-          <small>分类</small>
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/05/14/immersed-boundary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jsz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="巨婴男孩诞生记">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="immersed-boundary | 巨婴男孩诞生记">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          immersed-boundary
         </h1>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-05-14 15:39:33" itemprop="dateCreated datePublished" datetime="2022-05-14T15:39:33+08:00">2022-05-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-11-30 21:41:44" itemprop="dateModified" datetime="2022-11-30T21:41:44+08:00">2022-11-30</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="ghost-cell-ibm">Ghost-Cell IBM</h3>
+<p><a target="_blank" rel="noopener" href="https://www.cfd-online.com/Forums/main/94956-how-find-ghost-cells-immersed-boundary-methods.html">cfd-online arjun</a> <img src="/images/immersed-boundary/f1.png" title="原始方程求解" /> 力源项施加到流体相动量方程，而固体相内部网格速度等于颗粒速度。而压力由连续性方程求解得到包含流体、固体域整体的结果</p>
+<p><img src="/images/immersed-boundary/f2.png" title="动量方程修正" /> 通过修改ghost-cell值使原求解形式中梯度（扩散项）等变量在被边界截断时可以为实际情况。</p>
+<p><img src="/images/immersed-boundary/f3.png" title="方法核心" /> 遍历全部网格,对于流体网格,当其邻居中具有在颗粒内部的网格时便是ghost-cell，进而修改上述ghost-cell值。 而在整个区域内标记solid具有不同的方法,该作者未予以公开。</p>
+<p><img src="/images/immersed-boundary/f4.png" title="固体区域网格识别" /> 固体区域识别算法:采用三维遍历或最近邻搜索</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-05-01T21:52:06+08:00"
-              content="2022-05-01">
-          05-01
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/01/course-wiki/" itemprop="url">
-            <span itemprop="name">Wiki_3weeks</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/05/04/hello-world/" rel="prev" title="Hexo Basic">
+                  <i class="fa fa-chevron-left"></i> Hexo Basic
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/11/30/2022%E4%B8%8B%E5%8D%8A%E5%B9%B4/" rel="next" title="2022下半年">
+                  2022下半年 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
+</div>
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
+
 
 </div>
   </main>
